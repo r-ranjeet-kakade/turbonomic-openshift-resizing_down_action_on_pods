@@ -8,7 +8,9 @@ Turbonomic will recommend resizing down actions for these resources.
 
 ## Creating a yaml for pod deployment.
 ```console
-➜  oc create -f https://raw.githubusercontent.com/r-ranjeet-kakade/turbonomic-openshift-resizing_down_action_on_pods/main/pod_deployment.yaml
+oc create -f https://raw.githubusercontent.com/r-ranjeet-kakade/turbonomic-openshift-resizing_down_action_on_pods/main/pod_deployment.yaml
+```
+```
 namespace/action-merge-test created
 deployment.apps/action-merge-test created
 ```
