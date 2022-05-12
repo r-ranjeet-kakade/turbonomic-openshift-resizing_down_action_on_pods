@@ -9,7 +9,7 @@ metadata:
   name: action-merge-test
   namespace: action-merge-test
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: cpu-mem-load-group
@@ -37,9 +37,9 @@ spec:
           image: beekman9527/cpumemload:latest
           resources:
            limits:
-             memory: 200Mi
+             memory: 5000Mi
            requests:
-             memory: 130Mi
+             memory: 5000Mi
           env:
             - name: RUN_TYPE
               value: "memory"
